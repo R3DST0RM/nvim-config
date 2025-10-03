@@ -36,6 +36,9 @@ require("lazy").setup({
     -- UI
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
 
+    -- Editor
+    { import = "lazyvim.plugins.extras.editor.refactoring" },
+
     -- import/override with your plugins
     { import = "plugins" },
   },
