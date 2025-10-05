@@ -38,6 +38,7 @@ require("lazy").setup({
 
     -- Editor
     { import = "lazyvim.plugins.extras.editor.refactoring" },
+    { import = "lazyvim.plugins.extras.linting.eslint" },
 
     -- import/override with your plugins
     { import = "plugins" },
