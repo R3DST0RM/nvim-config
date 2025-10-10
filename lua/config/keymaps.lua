@@ -4,3 +4,7 @@
 
 -- Terminal mappings
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { silent = true })
+
+-- Normal mappings
+vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>", { desc = "Next buffer", silent = true })
+vim.keymap.set("n", "<S-Tab>", "<cmd>bprevious<cr>", { desc = "Previous buffer", silent = true })
