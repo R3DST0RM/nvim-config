@@ -1,4 +1,3 @@
-# 💤 LazyVim
+# 💤 R3DST0RM LazyVim configuration
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+This configuration is based on the [LazyVim](https://github.com/LazyVim/LazyVim) starter configuration.
