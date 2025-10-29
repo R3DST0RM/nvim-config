@@ -12,8 +12,8 @@ return {
         "SignColumn",
         "LineNr",
         "EndOfBuffer",
-        "Pmenu",
-        "PmenuSel",
+        --"Pmenu",
+        --"PmenuSel",
         "TelescopeNormal",
         "TelescopeBorder",
         "CursorLine",
@@ -22,7 +22,7 @@ return {
       for _, g in ipairs(groups) do
         o[g] = { bg = "NONE" }
       end
-      o.PmenuSel.bold = true
+      --o.PmenuSel.bold = true
       return o
     end,
   },

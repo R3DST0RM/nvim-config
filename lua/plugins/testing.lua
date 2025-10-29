@@ -75,7 +75,7 @@ return {
       end
 
       -- Optional UI tweaks
-      opts.discovery = { concurrent = 1 } -- helps in large monorepos
+      --opts.discovery = { concurrent = 1 } -- helps in large monorepos
       return opts
     end,
   },
