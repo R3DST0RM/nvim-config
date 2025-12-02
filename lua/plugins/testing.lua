@@ -53,10 +53,6 @@ return {
       opts.adapters = opts.adapters or {}
 
       table.insert(opts.adapters, require("neotest-zig")({}))
-      local config = {
-        runner = "gotestsum", -- Optional, but recommended
-      }
-      table.insert(opts.adapters, require("neotest-golang")(config))
 
       -- Conditionally enable Vitest
       if has_dep("vitest") then
