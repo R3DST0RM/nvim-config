@@ -31,14 +31,6 @@ return {
       -- adapters
       "marilari88/neotest-vitest",
       "nvim-neotest/neotest-jest",
-      "lawrence-laz/neotest-zig",
-      {
-        "fredrikaverpil/neotest-golang",
-        version = "*", -- Optional, but recommended; track releases
-        build = function()
-          vim.system({ "go", "install", "gotest.tools/gotestsum@latest" }):wait() -- Optional, but recommended
-        end,
-      },
     },
     ft = { -- lazy-load for relevant buffers
       "javascript",
@@ -51,8 +43,6 @@ return {
     opts = function(_, opts)
       opts = opts or {}
       opts.adapters = opts.adapters or {}
-
-      table.insert(opts.adapters, require("neotest-zig")({}))
 
       -- Conditionally enable Vitest
       if has_dep("vitest") then
