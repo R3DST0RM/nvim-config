@@ -21,7 +21,7 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
     -- AI
-    { import = "lazyvim.plugins.extras.ai.copilot" },
+    -- { import = "lazyvim.plugins.extras.ai.copilot" },
 
     -- Language support
     { import = "lazyvim.plugins.extras.lang.docker" },
@@ -46,15 +46,21 @@ require("lazy").setup({
     -- Editor
     { import = "lazyvim.plugins.extras.editor.refactoring" },
     { import = "lazyvim.plugins.extras.editor.mini-move" },
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.editor.telescope" },
+
+    -- Coding
+    { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.mini-snippets" },
     { import = "lazyvim.plugins.extras.coding.mini-comment" },
 
+    -- Linting and formatting
+    { import = "lazyvim.plugins.extras.linting.eslint" },
+
     -- Testing
     { import = "lazyvim.plugins.extras.test" },
+
+    -- Utilities
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 
     -- import/override with your plugins
     { import = "plugins" },
