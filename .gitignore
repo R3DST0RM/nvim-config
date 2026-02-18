@@ -8,3 +8,4 @@ foo.*
 data
 .idea/
 .vs/
+tmp/

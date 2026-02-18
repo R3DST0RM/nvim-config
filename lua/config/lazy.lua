@@ -23,6 +23,8 @@ require("lazy").setup({
     -- AI
     -- { import = "lazyvim.plugins.extras.ai.copilot" },
 
+    { import = "lazyvim.plugins.extras.coding.nvim-cmp" },
+
     -- Language support
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.lang.git" },
