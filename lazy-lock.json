@@ -1,5 +1,5 @@
 {
-  "99": { "branch": "master", "commit": "2415234dcd2a579eac4bd20c3c63e097d1f3da84" },
+  "99": { "branch": "master", "commit": "d34e4dcbcc1f95d8f31f851baad18da12c59e7df" },
   "LazyVim": { "branch": "main", "commit": "28db03f958d58dfff3c647ce28fdc1cb88ac158d" },
   "SchemaStore.nvim": { "branch": "main", "commit": "55ca969ceed5209d62cbf4c20cef023ff188b6c5" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },

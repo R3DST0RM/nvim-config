@@ -3,13 +3,15 @@ return {
   config = function()
     local _99 = require("99")
 
-    -- For logging that is to a file if you wish to trace through requests
-    -- for reporting bugs, i would not rely on this, but instead the provided
-    -- logging mechanisms within 99.  This is for more debugging purposes
-    local cwd = vim.uv.cwd()
-    local basename = vim.fs.basename(cwd)
     _99.setup({
       provider = _99.Providers.ClaudeCodeProvider, -- default: OpenCodeProvider
+
+      -- When setting this to something that is not inside the CWD tools
+      -- such as claude code or opencode will have permission issues
+      -- and generation will fail refer to tool documentation to resolve
+      -- https://opencode.ai/docs/permissions/#external-directories
+      -- https://code.claude.com/docs/en/permissions#read-and-edit
+      tmp_dir = "./tmp",
 
       --- Completions: #rules and @files in the prompt buffer
       completion = {
@@ -37,10 +39,10 @@ return {
 
         --- Configure @file completion (all fields optional, sensible defaults)
         files = {
-          -- enabled = true,
-          -- max_file_size = 102400,     -- bytes, skip files larger than this
-          -- max_files = 5000,            -- cap on total discovered files
-          -- exclude = { ".env", ".env.*", "node_modules", ".git", ... },
+          enabled = true,
+          max_file_size = 102400, -- bytes, skip files larger than this
+          max_files = 5000, -- cap on total discovered files
+          exclude = { ".env", ".env.*", "node_modules", ".git" },
         },
 
         --- "cmp" | "blink"
