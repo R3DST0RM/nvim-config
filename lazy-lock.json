@@ -1,7 +1,7 @@
 {
   "99": { "branch": "master", "commit": "4d229141546290746c82ac90f5afc2786865b5f3" },
-  "LazyVim": { "branch": "main", "commit": "fa88241e2f633feb530b09dc014fc51dcff5f5a8" },
-  "SchemaStore.nvim": { "branch": "main", "commit": "68ba9015c0cc77a0fe954bd2578dfa7a5c24134f" },
+  "LazyVim": { "branch": "main", "commit": "b30c0312ea1c5bed6b28e72d930059622b0525f8" },
+  "SchemaStore.nvim": { "branch": "main", "commit": "e25e63f3b24fd6b8c2fc713107ad5d5594028eac" },
   "async.nvim": { "branch": "main", "commit": "7a1d7d49933fbe902b84b55f352a3b10fd587331" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "catppuccin": { "branch": "main", "commit": "8edd468af4d63212b84d69b2ddb5ffc9023ef5eb" },
@@ -62,7 +62,7 @@
   "refactoring.nvim": { "branch": "master", "commit": "8f2045241fb105ab092021e3e58b5b99f34f07d0" },
   "render-markdown.nvim": { "branch": "main", "commit": "5adf0895310c1904e5abfaad40a2baad7fe44a07" },
   "rose-pine": { "branch": "main", "commit": "ff483051a47e27d84bdef47703538df1ed9f4a47" },
-  "rustaceanvim": { "branch": "main", "commit": "48c0ef3806fe5221ca89733295f8523345191899" },
+  "rustaceanvim": { "branch": "main", "commit": "147909fed9f2fd7787c18964d740a5dad84815e8" },
   "snacks.nvim": { "branch": "main", "commit": "882c996cf28183f4d63640de0b4c02ec886d01f2" },
   "tailwind-tools.nvim": { "branch": "master", "commit": "fbe982901d4508b0dcd80e07addf0fcb6dab6c49" },
   "tailwindcss-colorizer-cmp.nvim": { "branch": "main", "commit": "3d3cd95e4a4135c250faf83dd5ed61b8e5502b86" },
