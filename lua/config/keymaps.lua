@@ -51,7 +51,7 @@ vim.keymap.set("n", "<leader>dX", function()
 
         vim.api.nvim_set_current_win(win)
 
-        -- 🔥 IMPORTANT: q zum Schließen
+        -- support simple close
         vim.keymap.set("n", "q", function()
           vim.api.nvim_win_close(win, true)
         end, { buffer = buf, silent = true })
