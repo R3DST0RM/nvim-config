@@ -24,7 +24,7 @@ require("lazy").setup({
     -- { import = "lazyvim.plugins.extras.ai.copilot" },
     { import = "lazyvim.plugins.extras.ai.supermaven" },
 
-    { import = "lazyvim.plugins.extras.coding.nvim-cmp" },
+    { import = "lazyvim.plugins.extras.coding.blink" },
 
     { import = "lazyvim.plugins.extras.dap.core" },
 

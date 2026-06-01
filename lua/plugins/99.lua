@@ -46,7 +46,7 @@ return {
         },
 
         --- "cmp" | "blink"
-        source = "cmp",
+        source = "blink",
       },
 
       --- WARNING: if you change cwd then this is likely broken
