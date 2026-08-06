@@ -19,6 +19,14 @@ return {
       strategy = "terminal", -- oder "toggleterm", falls du das Plugin nutzt
       templates = { "builtin" },
       task_list = { direction = "right", min_width = 40 },
+      component_aliases = {
+        default = {
+          "on_exit_set_status",
+          "on_complete_notify",
+          { "on_complete_dispose", require_view = { "SUCCESS", "FAILURE" } },
+          { "open_output", direction = "float", focus = true, on_start = "always" },
+        },
+      },
     },
   },
 }
