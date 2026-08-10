@@ -18,6 +18,7 @@ vim.keymap.set("n", "<M-s>", "<cmd>silent !tmux neww tmux-sessionizer -s 3<CR>")
 
 -- Visual mappings
 vim.keymap.set("v", "<leader>csl", ":sort<CR>", { desc = "Sort lines", silent = true })
+vim.keymap.set("v", "<C-r>", ":SnipRun<CR>", { desc = "Run snippet", silent = true })
 
 -- Debugging mappings
 vim.keymap.set("n", "<leader>dv", function()
@@ -63,3 +64,13 @@ vim.keymap.set("n", "<leader>dX", function()
     end
   end, 50)
 end, { desc = "Floating DAP REPL" })
+
+vim.keymap.set("n", "<leader>.", function()
+  vim.ui.select(vim.fn.getcompletion("", "filetype"), {
+    prompt = "Scratch filetype",
+  }, function(ft)
+    if ft then
+      Snacks.scratch({ ft = ft })
+    end
+  end)
+end, { desc = "Scratch Buffer (pick filetype)" })
