@@ -24,6 +24,9 @@ return {
       require("rose-pine").setup(opts)
     end,
   },
+  { "Mofiqul/dracula.nvim" },
+  { "brargenzilian/darcula-solid.nvim" },
+  { "vague-theme/vague.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
