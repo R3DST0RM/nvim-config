@@ -1,5 +1,5 @@
-{
-    "kawre/neotab.nvim",
-    event = "InsertEnter",
-    opts = {},
+return {
+  "kawre/neotab.nvim",
+  event = "InsertEnter",
+  opts = {},
 }
